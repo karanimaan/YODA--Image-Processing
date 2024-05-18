@@ -1,5 +1,5 @@
 % Read the image
-image = imread('input.png');
+image = imread('handsmat.png');
 
 % Convert the image to RGB format (if not already in RGB)
 % if size(image, 3) ~= 3
@@ -16,7 +16,7 @@ figure
 imshowpair(image_resized, binary_data,'montage')
 
 % Create the raw file path
-raw_file = ['input', '.raw'];
+raw_file = ['INPUT_IMAGE', '.raw'];
 
 % Write the binary data to the raw file
 fid = fopen(raw_file, 'wb');
