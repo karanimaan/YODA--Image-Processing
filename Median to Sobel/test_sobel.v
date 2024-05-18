@@ -1,4 +1,4 @@
-`include "simple_median_filter.v"
+`include "sobel.v"
 //`timescale 1s / 1ms
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -26,11 +26,11 @@
 `define ROW 256
 `define COL 256
 `define width 8
-`define IN_FILE_NAME  "input.raw"
-`define OUT_FILE_NAME "filtered.raw"
+`define IN_FILE_NAME  "256-image.raw"
+`define OUT_FILE_NAME "output.raw"
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
-module test_simple_filter;
+module test_sobel;
 // -----------------------------------------------------------------------------
 // ----------------------------test arguments-----------------------------------
 reg		      [0:23]	 r24;	   // printing reg
@@ -46,7 +46,7 @@ reg				RST ;
 wire     [`ROW*`width*3-1:0] row_out;
 // -----------------------------------------------------------------------------
 // ---------------------------------UUT-----------------------------------------
-simple_median_filter UUT(
+sobel UUT(
 .row_in		(row_in),
 .CLK		   (CLK),
 .SET 		   (SET),

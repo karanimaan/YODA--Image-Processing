@@ -1,0 +1,1 @@
+convertImageToRaw('input.png')
