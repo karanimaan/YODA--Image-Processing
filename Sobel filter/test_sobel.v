@@ -26,8 +26,8 @@
 `define ROW 256
 `define COL 256
 `define width 8
-`define IN_FILE_NAME  "INPUT_IMAGE.raw"
-`define OUT_FILE_NAME "OUTPUT_SOBEL.raw"
+`define IN_FILE_NAME  "input.raw"
+`define OUT_FILE_NAME "output.raw"
 // -----------------------------------------------------------------------------
 // -----------------------------------------------------------------------------
 module test_sobel;

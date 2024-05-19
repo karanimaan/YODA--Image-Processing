@@ -1,1 +1,0 @@
-convertImageToRaw('input.png')
