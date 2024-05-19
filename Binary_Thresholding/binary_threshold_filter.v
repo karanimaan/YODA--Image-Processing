@@ -108,9 +108,9 @@ function [0:`ROW*`width*3-1] apply_threshold;
                 apply_threshold[24*i+8 +: 8] = 8'd255; // White
                 apply_threshold[24*i+16 +: 8] = 8'd255; // White
             end else begin
-                apply_threshold[24*i   +: 8] = 8'hFF; // Black
-                apply_threshold[24*i+8 +: 8] = 8'hFF; // Black
-                apply_threshold[24*i+16 +: 8] = 8'hFF; // Black
+                apply_threshold[24*i   +: 8] = 8'h00; // Black
+                apply_threshold[24*i+8 +: 8] = 8'h00; // Black
+                apply_threshold[24*i+16 +: 8] = 8'h00; // Black
             end
         end
     end

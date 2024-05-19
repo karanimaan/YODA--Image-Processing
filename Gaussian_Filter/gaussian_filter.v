@@ -12,9 +12,9 @@ module gaussian_filter(
     reg [`WIDTH-1:0] gaussKernel[2:0][2:0];
 
     initial begin
-        gaussKernel[0][0] = 8'd1; gaussKernel[0][1] = 8'd2; gaussKernel[0][2] = 8'd1;
-        gaussKernel[1][0] = 8'd2; gaussKernel[1][1] = 8'd4; gaussKernel[1][2] = 8'd2;
-        gaussKernel[2][0] = 8'd1; gaussKernel[2][1] = 8'd2; gaussKernel[2][2] = 8'd1;
+        gaussKernel[0][0] = 8'd3; gaussKernel[0][1] = 8'd21; gaussKernel[0][2] = 8'd3;
+        gaussKernel[1][0] = 8'd21; gaussKernel[1][1] = 8'd158; gaussKernel[1][2] = 8'd21;
+        gaussKernel[2][0] = 8'd3; gaussKernel[2][1] = 8'd21; gaussKernel[2][2] = 8'd3;
     end
 
     reg [`WIDTH-1:0] line_buf[2:0][`COL-1:0][2:0];
