@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Documents/HPES/Project/project 2/median_filter.v" \
+"../../../../../Documents/HPES/Project/project 2/test_median_filter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
